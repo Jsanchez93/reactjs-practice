@@ -7,9 +7,12 @@ export const Section = styled.section`
   height: auto;
   justify-content: flex-start;
   position: fixed;
-  right: 0;
+  right: 1%;
   top: 70px;
   width: 400px;
+  @media (min-width: 1500px) {
+    right: 5%;
+  }
 `
 
 export const Img = styled.img`
