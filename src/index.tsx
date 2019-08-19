@@ -1,8 +1,12 @@
+import axios from 'axios';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+// Config API url
+axios.defaults.baseURL = 'https://api.magicthegathering.io/v1';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
